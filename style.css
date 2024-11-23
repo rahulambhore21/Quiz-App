@@ -46,7 +46,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border-radius: 7px;
     cursor: pointer;
 }
-.btn:hover:not([disable]){
+.no-hover:hover:not([disable]){
     font-weight: 400;
     transition: ease-in 10ms;
     color: aliceblue;

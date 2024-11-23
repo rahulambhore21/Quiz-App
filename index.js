@@ -1,6 +1,6 @@
 const questions = [
   {
-    question: "True or False: Iconography is the use of text and images to convey specific messages.",
+    question: "Iconography is the use of text and images to convey specific messages.",
     options: [
       { text: "A. False", correct: true },
       { text: "B. True", correct: false }
@@ -82,8 +82,8 @@ const questions = [
             const button = document.createElement("button");
             button.innerHTML = option.text;
             button.classList.add("btn");
+            button.classList.add("no-hover");
             optionBtn.appendChild(button);
-            
             // console.log(option.text);
             if(option.correct) {
               button.dataset.correct = option.correct;
@@ -98,6 +98,8 @@ const questions = [
         }
     }
     function selectAnswer(e){
+      const hover = document.querySelector(".no-hover");
+      hover.classList.remove("no-hover");
       const exp = document.createElement("div");
       exp.innerHTML = questions[currentQuestionIndex].explanation;
       exp.id = "explanation";

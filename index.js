@@ -1,50 +1,56 @@
-const questions =[
-    {
-      question: "What is the capital of Japan?",
-      options: [
-        { text: "A. Tokyo", correct: true },
-        { text: "B. Seoul", correct: false },
-        { text: "C. Beijing", correct: false },
-        { text: "D. Bangkok", correct: false }
-      ]
-    },
-    {
-      question: "Which planet is known as the Red Planet?",
-      options: [
-        { text: "A. Earth", correct: false },
-        { text: "B. Mars", correct: true },
-        { text: "C. Jupiter", correct: false },
-        { text: "D. Venus", correct: false }
-      ]
-    },
-    {
-      question: "What is the largest mammal in the world?",
-      options: [
-        { text: "A. Elephant", correct: false },
-        { text: "B. Blue Whale", correct: true },
-        { text: "C. Giraffe", correct: false },
-        { text: "D. Rhino", correct: false }
-      ]
-    },
-    {
-      question: "Who wrote 'Romeo and Juliet'?",
-      options: [
-        { text: "A. William Shakespeare", correct: true },
-        { text: "B. Charles Dickens", correct: false },
-        { text: "C. Mark Twain", correct: false },
-        { text: "D. Jane Austen", correct: false }
-      ]
-    },
-    {
-      question: "Which is the smallest country in the world?",
-      options: [
-        { text: "A. Monaco", correct: false },
-        { text: "B. Vatican City", correct: true },
-        { text: "C. San Marino", correct: false },
-        { text: "D. Nauru", correct: false }
-      ]
-    }
-  ]
+const questions = [
+  {
+    question: "True or False: Iconography is the use of text and images to convey specific messages.",
+    options: [
+      { text: "A. False", correct: true  },
+      { text: "B. True", correct: false }
+    ]
+  },
+  {
+    question: "Repeating design patterns or templates in a presentation is advisable?",
+    options: [
+      { text: "A. Yes", correct: true },
+      { text: "B. No", correct: false }
+    ]
+  },
+  {
+    question: "Basics of presentation includes all except:",
+    options: [
+      { text: "A. Coordination with teammates", correct: false },
+      { text: "B. Visually pleasing", correct: false },
+      { text: "C. Research on the topic", correct: false },
+      { text: "D. Blindly reading the presentation", correct: true }
+    ]
+  },
+  {
+    question: "Wordy text can be made concise by:",
+    options: [
+      { text: "A. Putting content not related to the topic", correct: false },
+      { text: "B. Practicing reading fast", correct: false },
+      { text: "C. Using bullet points in necessary slides", correct: true },
+      { text: "D. Keeping the text as it is", correct: false }
+    ]
+  },
+  {
+    question: "Which of the following comes under visual design?",
+    options: [
+      { text: "A. Images", correct: false },
+      { text: "B. Typography", correct: false },
+      { text: "C. Layout and color", correct: false },
+      { text: "D. All of the above", correct: true }
+    ]
+  },
+  {
+    question: "How does typography impact the user experience?",
+    options: [
+      { text: "A. It limits creative options", correct: false },
+      { text: "B. It adds complexity to the text", correct: false },
+      { text: "C. It affects readability and tone", correct: true },
+      { text: "D. It plays no role at all", correct: false }
+    ]
+  }
+];
+
   const questionElement = document.getElementById("question");
   const optionBtn = document.getElementById("optionBtn");
   const nextBtn = document.getElementById("next-btn");

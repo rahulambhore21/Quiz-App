@@ -82,7 +82,7 @@ const questions = [
             const button = document.createElement("button");
             button.innerHTML = option.text;
             button.classList.add("btn");
-            button.classList.add("no-hover");
+            // button.classList.add("no-hover");
             optionBtn.appendChild(button);
             // console.log(option.text);
             if(option.correct) {
@@ -98,8 +98,8 @@ const questions = [
         }
     }
     function selectAnswer(e){
-      const hover = document.querySelector(".no-hover");
-      hover.classList.remove("no-hover");
+      // const hover = document.querySelector(".no-hover");
+      // hover.classList.remove("no-hover");
       const exp = document.createElement("div");
       exp.innerHTML = questions[currentQuestionIndex].explanation;
       exp.id = "explanation";

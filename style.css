@@ -54,6 +54,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .btn:disabled{
     cursor: no-drop;
+    color: black;
 }
 #next-btn{
     position: relative;
@@ -72,4 +73,13 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .incorrect{
     background-color: red;
+}
+
+#explanation{
+    margin: 30px 0;
+    width: 100%;
+    background-color:#021E4E;
+    color: aliceblue;
+    border-radius: 10px;
+    padding: 9px;
 }
